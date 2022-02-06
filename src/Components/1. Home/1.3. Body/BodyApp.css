@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+@font-face{
+    font-family: Miracle-u;
+    src:url(../../../fonts/Miracle\ Personal\ use.otf)
+}
+
+div.small{
+  border-top:  3px rgb(8, 8, 8) solid;
+  border-bottom: 3px rgb(8, 8, 8) solid;
+  border-right:  3px rgb(255, 255, 255) solid;
+  border-left:  3px rgb(255, 255, 255) solid;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  
+}
+
+div.tittle {
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    text-align: center;
+}
+div.tittle h2{
+    padding: 20px;
+    font-family: "Vujahday Script", cursive;
+    font-weight: 800;
+    font-size: 70px;
+    width: 100%;
+    color: white;
+    margin: 0;
+}
+
+
+div.secc{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 5px;
+}
+
+
+
+div.secc .secc_right{
+    padding: 10px;
+}div.secc .secc_right div.card{
+    margin: auto;
+}
+div.secc .secc_left .titulo{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+div.secc .secc_left .titulo h1{
+    font-family: "Vujahday Script", cursive;
+    color: white;
+    font-weight: 800;
+}
+div.secc .secc_left .parrafos p{
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}div.secc .secc_left .parrafos p.especial{
+    display: flex;
+    text-align: justify;
+    padding: 40px;
+}
+
+
+img.card-img-top{
+    width: 286px;
+    height: 160px;
+}
+div.card-body{
+    background-color: rgba(97, 97, 97, 0.363);
+}
+p.card-text{
+    display: flex;
+    text-align: justify;
+}
+button.btn.btn-primary{
+    display: flex;
+    margin: auto;
+    background-color: rgb(77, 83, 83);
+    border: transparent;
+}
+
+div.imagen{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: auto;
+    height: 250px;
+}img.secure{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 300px;
+}
+
+/*media query*/
+@media (max-width: 992px) {
+    div.tittle h2 {
+        font-size: 50px;
+    }
+    div.secc{
+        display: block
+    }
+    div.secc .secc_left .parrafos p.especial{
+        padding: 20px;
+    }
+}
+

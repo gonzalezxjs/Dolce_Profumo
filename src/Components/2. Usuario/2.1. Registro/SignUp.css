@@ -1,0 +1,60 @@
+
+div.hi{
+    display: block;
+}
+
+
+div.Claus{
+    border: 3px black solid;
+    width: auto;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-end;
+}
+
+button.btn.btn-dark, button.btn.btn-light{
+    margin:auto;
+    margin-top: 0;
+    width: 20%;
+    transition: .6s;
+    border-radius: 50px;
+    width: 25%;
+    height: 15%;
+}
+
+
+button.btn.btn-dark:hover {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    box-shadow: 0 0 5px #03f47b,
+    0 0 5px #03f47b,0 0 10px #03f47b,0 0 30px #03f47b;
+}button.btn.btn-light:hover{
+    background: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 0 0 5px #fc0b84,
+    0 0 5px #fc0b84,0 0 10px #fc0b84,0 0 30px #fc0b84;
+}
+
+@media (max-width: 992px) {
+    div.Claus{
+    display: flex;
+    width: auto;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    }
+
+    button.btn.btn-dark, button.btn.btn-light{
+        transition: .6s;
+        border-radius: 50px;
+        margin: auto;
+        width: 40%;
+    }
+
+    p{
+        display: none;
+    }
+}
